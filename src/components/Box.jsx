@@ -11,6 +11,9 @@ const MyBox = styled.div`
     font-size: 15px;
     line-height: 24px;
     font-weight: 300;
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
 `;
 
 export default function Box({ children, ...props }) {
