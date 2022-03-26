@@ -6,7 +6,6 @@ const MyTextInput = styled.input`
     min-width: 290px;
     border: none;
     border-radius: 5px;
-    width: 100%;
     font-size: 13px;
     font-family: 'Montserrat', sans-serif;
     line-height: 24px;
@@ -17,6 +16,6 @@ const MyTextInput = styled.input`
 
 export default function TextInput({ children, ...props }) {
     return (
-        <MyTextInput type="text" name="" id="" placeholder={children} />
+        <MyTextInput type={props.type} name={props.id} id={props.id} placeholder={children} />
     )
 }

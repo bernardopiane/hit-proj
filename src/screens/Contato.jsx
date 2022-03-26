@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components';
 import AreaTextInput from '../components/AreaTextInput';
 import Box from '../components/Box';
+import SubmitButton from '../components/SubmitButton';
 import TextInput from '../components/TextInput';
 import Title from '../components/Title';
 
@@ -19,6 +20,10 @@ const Row = styled.div`
     display: flex;
     flex-direction: row;
     gap: 17px;
+    // On small screens change flex direction to column
+    @media (max-width: 768px) {
+        flex-direction: column;
+    }
 `;
 
 export default function Contato() {
@@ -29,10 +34,13 @@ export default function Contato() {
             </TitleArea>
             <Box>
                 <Row>
-                    <TextInput>Nome*</TextInput>
-                    <TextInput>E-mail*</TextInput>
+                    <TextInput type="text" id="nome">Nome*</TextInput>
+                    <TextInput type="email" id="email">E-mail*</TextInput>
                 </Row>
                 <AreaTextInput>Mensagem*</AreaTextInput>
+                <SubmitButton>
+                    Enviar
+                </SubmitButton>
             </Box>
 
         </Layout>
