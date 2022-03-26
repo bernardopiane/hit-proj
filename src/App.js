@@ -1,12 +1,14 @@
 import Page from "./screens/Page";
 import styled from "styled-components";
 
-const Styles = styled(Page)`
+const Styles = styled.div`
   font-family: "Montserrat", sans-serif;
 `;
 
 function App() {
-  return <Page />;
+  return <Styles>
+    <Page />
+  </Styles>;
 }
 
 export default App;

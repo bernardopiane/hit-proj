@@ -8,6 +8,9 @@ const MyButton = styled.button`
     padding: 12px 58px;
     color: white;
     font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    border-radius: 10px;
 `;
 
 export default function Button({ children, ...props }) {
