@@ -13,6 +13,7 @@ const MyButton = styled(Link)`
     text-transform: uppercase;
     border-radius: 10px;
     text-decoration: none;
+    text-align: center;
 `;
 
 export default function Button({ children, ...props }) {
